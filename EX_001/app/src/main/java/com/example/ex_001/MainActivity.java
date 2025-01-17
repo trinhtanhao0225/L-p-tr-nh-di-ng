@@ -88,12 +88,21 @@ public class MainActivity extends AppCompatActivity {
                 if (inputText.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Vui lòng nhập chuỗi", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Đảo ngược chuỗi và chuyển thành chữ hoa
-                    String reversedText = new StringBuilder(inputText).reverse().toString().toUpperCase();
+                    // Tách chuỗi thành các từ
+                    String[] words = inputText.split(" ");
+
+                    // Đảo ngược thứ tự các từ
+                    StringBuilder reversedText = new StringBuilder();
+                    for (int i = words.length - 1; i >= 0; i--) {
+                        reversedText.append(words[i]).append(" ");
+                    }
+
+                    // Loại bỏ khoảng trắng thừa ở cuối
+                    String finalReversedText = reversedText.toString().trim().toUpperCase();
 
                     // Hiển thị kết quả lên TextView và Toast
-                    resultText.setText(reversedText);
-                    Toast.makeText(MainActivity.this, reversedText, Toast.LENGTH_SHORT).show();
+                    resultText.setText(finalReversedText);
+                    Toast.makeText(MainActivity.this, finalReversedText, Toast.LENGTH_SHORT).show();
                 }
             }
         });
