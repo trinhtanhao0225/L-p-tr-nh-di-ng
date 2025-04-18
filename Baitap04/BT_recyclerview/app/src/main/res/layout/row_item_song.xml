@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:gravity="center"
+        android:text="60650"
+        android:textColor="#19b395"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="HAY TIN ANH LAN NUA"
+            android:textColor="#2c3e50"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_lyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Dẫu cho hai ta đã sai khi ở bên nhau. Có yêu thương"
+            android:textColor="#34495e"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thiên Dũng"
+            android:textColor="#7f8c8d"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
